@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ex.css">
+</head>
+<body>
+    <h2 class="head">Welcome to a Simple HTML Page with css and JS.</h2>
+    <div class="box">
+    <h2>Enter Text</h2>
+    <input type="text" id="text"> <button onclick="display()">Submit</button>
+    <br><br><div ><p id="show"></p></div>
+    </div>
+    <script>
+        function display(){
+           let msg=document.getElementById("text").value;
+           document.getElementById("show").innerText=`You Entered: ${msg}`;
+        }
+    </script>
+</body>
+</html>
